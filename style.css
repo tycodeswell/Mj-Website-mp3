@@ -1,7 +1,8 @@
 body {
-    background-color: white;
-    font-family: sans-serif;
+    background-color: cream;
+    font-family: "oi",serif;
     margin: 0;
+    /* other styles*/
 }
 
 header {
@@ -78,11 +79,17 @@ header {
     padding: 20px;
 }
 
-.gallery img {
-    max-width: 300px;
-    margin: 10px;
+..gallery img {
+    max-width: 600px;
+    margin: 20px;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: 100%; /* Fill the entire width on smaller screens */
+        margin: 10px 0; /* Adjust margins for mobile */
+    }
 
 /* Mobile Responsiveness */
 @media (min-width: 768px) {
