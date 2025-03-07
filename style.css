@@ -7,108 +7,11 @@ body {
 
 header {
     background-color: darkred;
-    color: white;
+    color: cream;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 3px 0;
-}
-
-.nav-menu {
-    display: none;
-    flex-direction: column;
-    background-color: darkred;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
-}
-
-.nav-menu.active {
-    display: flex;
-}
-
-.banner {
-    text-align: center;
-    padding: 20px;
-}
-
-.banner h2 {
-    color: darkred;
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-}
-
-.container img {
-    max-width: 900px; /* 3x bigger */
-    border-radius: 20px; /* Rounded edges */
-    margin-bottom: 20px;
-}
-
-.container audio {
-    width: 300px;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-..gallery img {
-    max-width: 600px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .gallery img {
-        max-width: 100%; /* Fill the entire width on smaller screens */
-        margin: 10px 0; /* Adjust margins for mobile */
-    }
-
-/* Mobile Responsiveness */
-@media (min-width: 768px) {
-    .nav-menu {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background-color: transparent;
-    }
-
-    header {
-        justify-content: space-around;
-    }
-
-    .nav-menu a {
-        color: white;
-    }
-    .hamburger-menu{
-        display: none;
-    }
-}
